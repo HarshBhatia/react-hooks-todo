@@ -69,8 +69,19 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className={"heading"}>📔 Hooks Todo!</h1>
-      <h4 className="credits">GitHub</h4>
+      <h1 className={"heading"}>
+        <span role="img" aria-label="Note Book">
+          📔
+        </span>
+        Hooks Todo!
+      </h1>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/HarshBhatia/react-hooks-todo"
+      >
+        <h4 className="credits">GitHub</h4>
+      </a>
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo

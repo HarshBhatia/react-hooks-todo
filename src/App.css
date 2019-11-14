@@ -59,7 +59,7 @@ input:focus {
 
 .credits {
   margin-top: 0px;
-
+  text-decoration: underline;
   color: white;
   text-align: center;
 }
