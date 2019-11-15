@@ -13,7 +13,12 @@ function Todo({ key, index, todo, toggleTodo, deleteTodo }) {
       >
         {todo.title}
       </span>
-      <span className="check" onClick={deleteTodo}>
+      <span
+        className="check"
+        onClick={() => {
+          deleteTodo(index);
+        }}
+      >
         X
       </span>
     </div>
@@ -97,12 +102,4 @@ function App() {
     </div>
   );
 }
-
-const styles = {
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  }
-};
 export default App;
